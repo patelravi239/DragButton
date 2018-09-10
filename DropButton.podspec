@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
 
-  s.source       = { :http => 'http://example.com/sdk/1.0.0/MySDK.zip' }
+  s.source       = { :git => 'https://github.com/patelravi239/DragButton.git' }
 
   s.source_files  = "DropButton", "DropButton/**/*.{h,m,swift}"
   
@@ -20,4 +20,4 @@ Pod::Spec.new do |s|
   s.dependency 'Alamofire'
   s.dependency 'SwiftyJSON'
 
-end
+end 
