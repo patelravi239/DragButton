@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		41D66B0B214650CE00CBA6B1 /* DragButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 41D66B09214650CE00CBA6B1 /* DragButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41D66B122146514000CBA6B1 /* DragButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D66B112146514000CBA6B1 /* DragButton.swift */; };
+		91CEA38B49CD5666F497B789 /* Pods_DragButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1121C4352F1BDFD4491933B7 /* Pods_DragButton.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1121C4352F1BDFD4491933B7 /* Pods_DragButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B353A3F8F4CB552FD0B09C6 /* Pods-DragButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DragButton/Pods-DragButton.debug.xcconfig"; sourceTree = "<group>"; };
+		2C698D3AD565464B16A7F56B /* Pods-DragButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-DragButton/Pods-DragButton.release.xcconfig"; sourceTree = "<group>"; };
 		41D66B06214650CE00CBA6B1 /* DragButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DragButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D66B09214650CE00CBA6B1 /* DragButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragButton.h; sourceTree = "<group>"; };
 		41D66B0A214650CE00CBA6B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41D66B112146514000CBA6B1 /* DragButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +27,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91CEA38B49CD5666F497B789 /* Pods_DragButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1425422B16F1AB6EFC8D649F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1121C4352F1BDFD4491933B7 /* Pods_DragButton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		41D66AFC214650CE00CBA6B1 = {
 			isa = PBXGroup;
 			children = (
 				41D66B08214650CE00CBA6B1 /* DragButton */,
 				41D66B07214650CE00CBA6B1 /* Products */,
+				CD2565A8FA39B6752EBB9BBC /* Pods */,
+				1425422B16F1AB6EFC8D649F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +65,18 @@
 			children = (
 				41D66B09214650CE00CBA6B1 /* DragButton.h */,
 				41D66B0A214650CE00CBA6B1 /* Info.plist */,
+				41D66B112146514000CBA6B1 /* DragButton.swift */,
 			);
 			path = DragButton;
+			sourceTree = "<group>";
+		};
+		CD2565A8FA39B6752EBB9BBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B353A3F8F4CB552FD0B09C6 /* Pods-DragButton.debug.xcconfig */,
+				2C698D3AD565464B16A7F56B /* Pods-DragButton.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +97,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41D66B0E214650CE00CBA6B1 /* Build configuration list for PBXNativeTarget "DragButton" */;
 			buildPhases = (
+				F24D63F616D9A25EA40C94A1 /* [CP] Check Pods Manifest.lock */,
 				41D66B01214650CE00CBA6B1 /* Sources */,
 				41D66B02214650CE00CBA6B1 /* Frameworks */,
 				41D66B03214650CE00CBA6B1 /* Headers */,
@@ -95,6 +123,7 @@
 				TargetAttributes = {
 					41D66B05214650CE00CBA6B1 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -125,11 +154,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F24D63F616D9A25EA40C94A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DragButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		41D66B01214650CE00CBA6B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41D66B122146514000CBA6B1 /* DragButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +309,9 @@
 		};
 		41D66B0F214650CE00CBA6B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B353A3F8F4CB552FD0B09C6 /* Pods-DragButton.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -274,7 +327,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravi.DragButton;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -282,7 +336,9 @@
 		};
 		41D66B10214650CE00CBA6B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C698D3AD565464B16A7F56B /* Pods-DragButton.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -298,7 +354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravi.DragButton;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
