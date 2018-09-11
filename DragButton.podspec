@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "DragButton"
+  s.name         = "DragBtn"
   s.version      = "1.0.0"
   s.summary      = "Drag button on current view via DropButton SDK."
 
@@ -11,9 +11,9 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://www.guideme.io/"
 
-  s.platform     = :ios
+  s.platform     = :ios, "10.0"
 
-  s.source       = {  :git => 'https://github.com/patelravi239/DragButton.git' }
+  s.source       = {  :git => 'https://github.com/patelravi239/DragBtnSDK.git' :tag => '1.0.0' }
 
   s.source_files  = "DragButton", "DragButton/**/*.{h,m,swift}"
   
