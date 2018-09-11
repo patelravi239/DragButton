@@ -9,9 +9,11 @@ Pod::Spec.new do |s|
 
   s.author    = "Ravinandan Patel"
 
+  s.homepage     = "https://www.guideme.io/"
+
   s.platform     = :ios
 
-  s.source       = { :git => 'https://github.com/patelravi239/DragButton.git' }
+  s.source       = { :git => 'https://github.com/patelravi239/DragButton.git', :tag => "1.0.0" }
 
   s.source_files  = "DropButton", "DropButton/**/*.{h,m,swift}"
   
