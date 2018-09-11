@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
 
-  s.source       = {  :http => 'https://github.com/patelravi239/DragButton.git' }
+  s.source       = {  :git => 'https://github.com/patelravi239/DragButton.git' }
 
   s.source_files  = "DragButton", "DragButton/**/*.{h,m,swift}"
   
