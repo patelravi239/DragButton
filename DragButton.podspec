@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => 'https://github.com/patelravi239/DragButton.git', :tag => "1.0.0" }
 
-  s.source_files  = "DropButton", "DropButton/**/*.{h,m,swift}"
+  s.source_files  = "DragButton", "DragButton/**/*.{h,m,swift}"
   
-  s.ios.vendored_frameworks = 'DropButton.framework'
+  s.ios.vendored_frameworks = 'DragButton.framework'
 
   s.dependency 'Alamofire'
   s.dependency 'SwiftyJSON'
