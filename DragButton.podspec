@@ -19,6 +19,9 @@ Pod::Spec.new do |s|
   
   s.ios.vendored_frameworks = 'DragButton.framework'
 
+  s.ios.deployment_target = '10.0'
+
+
   s.dependency 'Alamofire'
   s.dependency 'SwiftyJSON'
 
