@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DragButton"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Drag button on current view via DropButton SDK."
 
   s.license      = "MIT"
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "10.0"
 
-  s.source       = { :git => 'https://github.com/patelravi239/DragButton.git',  :tag => '1.0.0' }
+  s.source       = { :git => 'https://github.com/patelravi239/DragButton.git',  :tag => '1.0.1' }
 
   s.source_files  = "DragButton", "DragButton/**/*.{h,m,swift}"
   
