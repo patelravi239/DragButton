@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "DragBtn"
+  s.name         = "DragButton"
   s.version      = "1.0.0"
   s.summary      = "Drag button on current view via DropButton SDK."
 
