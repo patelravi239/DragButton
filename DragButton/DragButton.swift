@@ -10,6 +10,11 @@ import UIKit
 
 public class DragButton: UIButton {
 
+    static let shared: DragButton = {
+        let launchBtn = DragButton(frame: CGRect(x: 100, y: 300, width: 50, height: 50))
+        return launchBtn
+    }()
+    
     // MARK:- Initializers
     override public init(frame: CGRect) {
         super.init(frame: frame)
@@ -33,7 +38,7 @@ public class DragButton: UIButton {
     }
 
     @objc func btnLaunchDragAction(recognizer: UIPanGestureRecognizer) {
-        if (recognizer.state != UIGestureRecognizerState.ended) && (recognizer.state != UIGestureRecognizerState.failed) {
+        if (recognizer.state != UIGestureRecognizer.State.ended) && (recognizer.state != UIGestureRecognizer.State.failed) {
             recognizer.view?.center = recognizer.location(in: recognizer.view?.superview)
         }
     }
