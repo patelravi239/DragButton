@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410BF92F24B8445E005C55B6 /* DragButtonSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410BF92E24B8445E005C55B6 /* DragButtonSDK.swift */; };
 		41D66B0B214650CE00CBA6B1 /* DragButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 41D66B09214650CE00CBA6B1 /* DragButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41D66B122146514000CBA6B1 /* DragButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D66B112146514000CBA6B1 /* DragButton.swift */; };
 		91CEA38B49CD5666F497B789 /* Pods_DragButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1121C4352F1BDFD4491933B7 /* Pods_DragButton.framework */; };
@@ -16,6 +17,7 @@
 		1121C4352F1BDFD4491933B7 /* Pods_DragButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B353A3F8F4CB552FD0B09C6 /* Pods-DragButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DragButton/Pods-DragButton.debug.xcconfig"; sourceTree = "<group>"; };
 		2C698D3AD565464B16A7F56B /* Pods-DragButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-DragButton/Pods-DragButton.release.xcconfig"; sourceTree = "<group>"; };
+		410BF92E24B8445E005C55B6 /* DragButtonSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragButtonSDK.swift; sourceTree = "<group>"; };
 		41D66B06214650CE00CBA6B1 /* DragButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DragButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D66B09214650CE00CBA6B1 /* DragButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragButton.h; sourceTree = "<group>"; };
 		41D66B0A214650CE00CBA6B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				41D66B09214650CE00CBA6B1 /* DragButton.h */,
+				410BF92E24B8445E005C55B6 /* DragButtonSDK.swift */,
 				41D66B0A214650CE00CBA6B1 /* Info.plist */,
 				41D66B112146514000CBA6B1 /* DragButton.swift */,
 			);
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410BF92F24B8445E005C55B6 /* DragButtonSDK.swift in Sources */,
 				41D66B122146514000CBA6B1 /* DragButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

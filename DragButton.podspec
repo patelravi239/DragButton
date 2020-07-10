@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 
   s.license      = "MIT"
 
-  s.author    = "Ravinandan Patel"
+  s.author       =   { 'Ravi patel' => 'patelravi239@gmail.com' }
 
   s.homepage     = "https://www.guideme.io/"
 
