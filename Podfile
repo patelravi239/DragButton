@@ -7,13 +7,6 @@ target 'DragButton' do
 
   # Pods for DragButton
 pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
-pod 'Alamofire',  :git => 'https://github.com/Alamofire/Alamofire.git'
+#pod 'Alamofire',  :git => 'https://github.com/Alamofire/Alamofire.git'
 
-end
-
-
-devices.map do |device|
-  if device['availability'] == '(available)' || device['isAvailable'] == 'YES' || device['isAvailable'] == true
-    Simulator.new(device, os_name, os_version)
-  end
 end
